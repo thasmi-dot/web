@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Mouse Over</title>
+<style>
+img{                                           
+border-radius:70%;
+position:absolute;
+top:25%;
+left:35%;
+padding:16px 30px;
+}
+p{
+position:absolute;
+top:65%;
+left:39%;
+}
+</style>
+</head>
+<body>
+<img src="a.jpeg"id="image"onmouseover="one()"onmouseout="two()">
+<p id="p1">      
+</p>
+<script>
+function one()
+{
+document.getElementById("image").src="b.jpeg";
+document.getElementById("p1").innerHTML="onmouseover";
+document.getElementById("p1").style.color="blue";
+}
+function two()
+{
+document.getElementById("image").src="c.jpeg";
+document.getElementById("p1").innerHtml="onmouseover";
+document.getElementById("p1").style.color="Red";
+}
+</script>
+</body>
+</html>
+
